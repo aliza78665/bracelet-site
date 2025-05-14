@@ -1,0 +1,159 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Bracelet Store</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #f9f9f9;
+      margin: 0;
+      padding: 0;
+    }
+
+    header {
+      background: #222;
+      color: white;
+      padding: 20px;
+      text-align: center;
+    }
+
+    nav {
+      background: #444;
+      padding: 10px;
+      display: flex;
+      justify-content: center;
+      gap: 15px;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+    }
+
+    .container {
+      max-width: 1100px;
+      margin: 20px auto;
+      padding: 20px;
+      background: white;
+      border-radius: 8px;
+    }
+
+    .category {
+      margin-bottom: 30px;
+    }
+
+    .category h2 {
+      border-bottom: 2px solid #ddd;
+      padding-bottom: 10px;
+    }
+
+    .bracelet-grid {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+    }
+
+    .bracelet {
+      width: 200px;
+      border: 1px solid #ddd;
+      border-radius: 6px;
+      padding: 10px;
+      background: #fafafa;
+    }
+
+    .bracelet img {
+      width: 100%;
+      height: 150px;
+      object-fit: cover;
+    }
+
+    .upload-form {
+      margin-top: 40px;
+    }
+
+    .upload-form input, .upload-form button {
+      display: block;
+      margin: 10px 0;
+      padding: 10px;
+      width: 100%;
+    }
+
+    footer {
+      background: #222;
+      color: white;
+      text-align: center;
+      padding: 15px;
+      margin-top: 40px;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Bracelet Bliss</h1>
+    <p>Explore Our Unique Bracelet Collection</p>
+  </header>
+
+  <nav>
+    <a href="#">Home</a>
+    <a href="#">Gold Bracelets</a>
+    <a href="#">Silver Bracelets</a>
+    <a href="#">Beaded Bracelets</a>
+    <a href="#">Charm Bracelets</a>
+  </nav>
+
+  <div class="container">
+
+    <div class="category">
+      <h2>Gold Bracelets</h2>
+      <div class="bracelet-grid">
+        <div class="bracelet">
+          <img src="https://via.placeholder.com/200x150" alt="Gold Bracelet">
+          <p>Elegant Gold - $120</p>
+        </div>
+        <div class="bracelet">
+          <img src="https://via.placeholder.com/200x150" alt="Gold Bracelet">
+          <p>Classic Bangle - $90</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="category">
+      <h2>Silver Bracelets</h2>
+      <div class="bracelet-grid">
+        <div class="bracelet">
+          <img src="https://via.placeholder.com/200x150" alt="Silver Bracelet">
+          <p>Silver Wave - $75</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="category">
+      <h2>Beaded Bracelets</h2>
+      <div class="bracelet-grid">
+        <div class="bracelet">
+          <img src="https://via.placeholder.com/200x150" alt="Beaded Bracelet">
+          <p>Rainbow Beads - $30</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="upload-form">
+      <h2>Upload Your Own Bracelet</h2>
+      <form>
+        <input type="text" placeholder="Bracelet Name" required>
+        <input type="number" placeholder="Price ($)" required>
+        <input type="file" accept="image/*" required>
+        <button type="submit">Upload Bracelet</button>
+      </form>
+    </div>
+  </div>
+
+  <footer>
+    &copy; 2025 Bracelet Bliss. All rights reserved.
+  </footer>
+
+</body>
+</html>
